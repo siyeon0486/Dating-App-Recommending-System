@@ -1,0 +1,16 @@
+1. 기존 데이터베이스 삭제 혹은 백업
+DROP DATABASE IF EXISTS mydb;
+CREATE DATABASE mydb CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE mydb;
+
+2. 새 텀프 가져오기
+mysql -u root -p mydb < "C:\Users\juni4\OneDrive\바탕 화면\matching\matchdbver2.sql"
+
+3. 테이블 구조 확인
+DESCRIBE MatchResult;
+
+
+---
+회원 가입 이후 mysql 데이터 추가 확인 방법
+1. 터미널에서 mysql -u root -p
+2. select * from user;
